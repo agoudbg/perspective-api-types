@@ -1,0 +1,32 @@
+{
+  "name": "perspective-api-types",
+  "version": "1.0.0",
+  "description": "Typescript support for Perspective API export file.",
+  "main": "",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "preversion": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agoudbg/perspective-api-types.git"
+  },
+  "author": "agoudbg <agoudbg@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/agoudbg/perspective-api-types/issues"
+  },
+  "homepage": "https://github.com/agoudbg/perspective-api-types#readme",
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
